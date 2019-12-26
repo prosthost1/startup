@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-Regular.eot");
+  src: url("../fonts/RobotoSlab-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab-Regular.woff") format("woff"), url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 71%;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 40px 0 290px;
+  background: url(../images/headerbg.png) no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  float: left;
+  margin: 0;
+  font-size: 0;
+}
+
+.logo__link {
+  font: 700 24px "Montserrat";
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav {
+  float: right;
+  padding-top: 5px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  display: inline-block;
+  font: 400 14px "Montserrat";
+  color: #fff;
+  text-decoration: none;
+  padding: 0 18px 0;
+  transition: all 0.1s ease;
+}
+
+.nav__link:hover {
+  background-color: #fff;
+  box-shadow: 0 0 0 6px #fff;
+  color: #c0301c;
+  border-radius: 1px;
+}
+.header-title {
+  padding: 22.5% 0 50px;
+}
+.header-title__text {
+  margin: 0;
+  text-align: center;
+  font: 400 48px "Montserrat";
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header-title__caption {
+  margin: 0;
+  padding-top: 25px;
+  text-align: center;
+  font: 400 24px "Roboto Slab";
+  color: #fff;
+}
+.button {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.button-row {
+  margin: 0;
+  text-align: center;
+}
+.header__button {
+  display: inline-block;
+  padding: 13px 26px;
+  font: 700 16px "Montserrat";
+  color: #fff;
+  letter-spacing: 1px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.header__button:hover {
+  background-color: #fff;
+  color: #c0301c;
+}
+/* services */
+.services {
+  padding: 100px 0;
+}
+.title {
+  text-align: center;
+}
+.title__headline {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 60px;
+  font: 400 20px "Montserrat";
+  color: #555;
+  text-transform: uppercase;
+}
+.title__headline:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #555;
+  bottom: -28px;
+  left: 25px;
+}
+.title__caption {
+  margin: 0;
+  font: 400 16px "Robot Slab";
+  color: #555;
+}
+.content {
+  padding-top: 65px;
+}
+.service {
+  display: inline-block;
+  width: 366px;
+}
+.content__service {
+  margin: 22px;
+}
+.service__picture {
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+  background-image: url(../images/sprite.png);
+}
+.code__picture {
+  background-position: -94px -1px;
+}
+.support__picture {
+  background-position: -187px -1px;
+}
+.service__title {
+  margin: 0;
+  padding: 30px 0 25px;
+  font: 400 14px "Montserrat";
+  color: #555;
+  text-align: center;
+}
+.service__description {
+  margin: 0;
+  font: 400 14px "Montserrat";
+  color: #555;
+}
