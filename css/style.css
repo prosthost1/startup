@@ -1,76 +1,73 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.eot");
-  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.eot");
-  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Roboto Slab";
   src: url("../fonts/RobotoSlab-Regular.eot");
-  src: url("../fonts/RobotoSlab-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab-Regular.woff") format("woff"), url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
+  src: url("../fonts/RobotoSlab-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/RobotoSlab-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoSlab-Regular.woff") format("woff"),
+    url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   margin: 0;
   padding: 0;
 }
-
 .clear:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
-
 .wrapper {
-  width: 71%;
+  width: 1140px;
   margin: 0 auto;
 }
-
 .header {
-  padding: 40px 0 290px;
+  padding: 40px 0 260px;
   background: url(../images/headerbg.png) no-repeat;
   background-size: cover;
 }
-
 .logo {
   float: left;
   margin: 0;
   font-size: 0;
 }
-
 .logo__link {
   font: 700 24px "Montserrat";
   color: #fff;
   text-decoration: none;
 }
-
 .nav {
   float: right;
   padding-top: 5px;
 }
-
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .nav__item {
   display: inline-block;
 }
-
 .nav__link {
   display: inline-block;
   font: 400 14px "Montserrat";
@@ -79,7 +76,6 @@ body {
   padding: 0 18px 0;
   transition: all 0.1s ease;
 }
-
 .nav__link:hover {
   background-color: #fff;
   box-shadow: 0 0 0 6px #fff;
@@ -91,7 +87,6 @@ body {
 }
 .header-title__text {
   margin: 0;
-  text-align: center;
   font: 400 48px "Montserrat";
   letter-spacing: 6px;
   text-transform: uppercase;
@@ -100,7 +95,6 @@ body {
 .header-title__caption {
   margin: 0;
   padding-top: 25px;
-  text-align: center;
   font: 400 24px "Roboto Slab";
   color: #fff;
 }
@@ -136,19 +130,19 @@ body {
 .title__headline {
   display: inline-block;
   position: relative;
-  margin: 0 0 60px;
-  font: 400 20px "Montserrat";
+  margin: 0 0 55px;
+  font: 700 20px "Montserrat";
   color: #555;
   text-transform: uppercase;
 }
 .title__headline:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 2px;
   background-color: #555;
   bottom: -28px;
-  left: 25px;
+  left: 25%;
 }
 .title__caption {
   margin: 0;
@@ -158,12 +152,17 @@ body {
 .content {
   padding-top: 65px;
 }
+.content-services {
+  width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
 .service {
   display: inline-block;
-  width: 366px;
+  width: 345px;
 }
 .content__service {
-  margin: 22px;
+  margin: 0 25px;
 }
 .service__picture {
   margin: 0 auto;
@@ -186,6 +185,257 @@ body {
 }
 .service__description {
   margin: 0;
-  font: 400 14px "Montserrat";
+  font: 400 14px/24px "Montserrat";
   color: #555;
+}
+.about-us {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+.about-us__wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+.about-us__text {
+  width: 555px;
+  margin: 0;
+  font: 400 14px/24px "Robot Slab";
+  color: #555;
+}
+.about-us__text_left {
+  float: left;
+}
+.about-us__text_right {
+  float: right;
+}
+.team {
+  position: relative;
+  padding-top: 70px;
+  margin: 0 -12px;
+  float: left;
+}
+.arrow {
+  position: absolute;
+  box-sizing: border-box;
+  width: 35px;
+  height: 38px;
+  background-color: #c3c3c3;
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+.left-arrow {
+  padding: 10px 13px;
+}
+.right-arrow {
+  padding: 10px 9px;
+}
+.arrow:hover {
+  background-color: #c0301c;
+}
+.arrow:hover:before {
+  border-color: #fff;
+}
+.arrow:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+  transform: rotate(-45deg);
+  transition: all 0.2s ease;
+}
+.left-arrow:before {
+  border-top: 2px solid #dcdcdc;
+  border-left: 2px solid #dcdcdc;
+}
+.right-arrow:before {
+  border-right: 2px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+}
+.team__left-arrow {
+  top: 45%;
+  left: 12px;
+}
+.team__right-arrow {
+  top: 45%;
+  right: 12px;
+}
+.member {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+}
+.team__member {
+  margin: 0 12px;
+}
+.member__text {
+  margin: 0;
+  text-align: center;
+  color: #555;
+}
+.member__name {
+  padding: 20px 0 15px;
+  font: 400 14px "Montserrat";
+  text-transform: uppercase;
+}
+.member__post {
+  font: 400 14px "Roboto Slab";
+}
+.social {
+  position: absolute;
+  width: 115px;
+  height: 28px;
+}
+.member__social {
+  opacity: 0;
+  top: 190px;
+  left: 75px;
+  transition: all 0.2s ease;
+}
+.member:hover .member__social {
+  opacity: 1;
+}
+.social__icon {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  vertical-align: top;
+  transition: all 0.2s ease;
+}
+.social__icon:hover {
+  background-color: #c0301c;
+}
+.social__fb {
+  padding: 5px 10px;
+}
+.social__tw {
+  padding: 7px 5px;
+}
+.social__gp {
+  padding: 5px 6px;
+}
+.social__in {
+  padding: 6px 7px;
+}
+.member a:before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/sprite.png);
+}
+.social__fb:before {
+  width: 9px;
+  height: 16px;
+  background-position: -280px 0;
+}
+.social__tw:before {
+  width: 18px;
+  height: 14px;
+  background-position: -289px 0;
+}
+.social__gp:before {
+  width: 18px;
+  height: 17px;
+  background-position: -308px 0;
+}
+.social__in:before {
+  width: 14px;
+  height: 14px;
+  background-position: -330px 0;
+}
+.works {
+  padding: 100px 0;
+}
+.works__title {
+  margin-bottom: 70px;
+}
+.title__headline_works:before {
+  left: 35%;
+}
+.works-menu {
+  margin: 0;
+  padding: 0;
+}
+.works-menu__item {
+  display: inline-block;
+  margin: 0 12px;
+}
+.works-menu__link {
+  text-decoration: none;
+  font: 400 16px "Roboto Slab";
+  color: #555;
+}
+.works-menu__link:hover {
+  color: #c0301c;
+}
+
+.catalog {
+  margin: 0 -15px;
+  font-size: 0;
+}
+.work {
+  display: inline-block;
+  position: relative;
+  margin: 0 15px 30px;
+  cursor: pointer;
+}
+.work:before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(191, 47, 27, 0.7);
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+.work:hover:before {
+  opacity: 1;
+}
+.work__caption {
+  position: absolute;
+  opacity: 0;
+  top: 100px;
+  left: 34%;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+.work:hover .work__caption {
+  opacity: 1;
+}
+.caption-work__title {
+  margin: 0;
+  font: 400 18px "Montserrat";
+  color: #fff;
+}
+.caption-work__subtitle {
+  margin: 16px 0 24px;
+  font: 400 12px "Roboto Slab";
+  color: #fff;
+}
+.caption-work__button {
+  position: relative;
+  padding: 11px 40px 11px 20px;
+  font: 400 14px "Roboto Slab";
+  color: #c0301c;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+.caption-work__button:after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 21px;
+  width: 7px;
+  height: 7px;
+  border-bottom: 1px solid #c0301c;
+  border-right: 1px solid #c0301c;
+  transform: rotate(-45deg);
+  transition: all 0.2s ease;
+}
+.caption-work__button:hover:after {
+  transform: rotate(45deg);
 }
