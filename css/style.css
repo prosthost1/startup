@@ -370,14 +370,16 @@ body {
 }
 
 .catalog {
-  margin: 0 -15px;
   font-size: 0;
+  margin: 0 -15px;
 }
 .work {
   display: inline-block;
   position: relative;
-  margin: 0 15px 30px;
   cursor: pointer;
+}
+.catalog__work {
+  margin: 0 15px 30px;
 }
 .work:before {
   content: "";
@@ -438,4 +440,178 @@ body {
 }
 .caption-work__button:hover:after {
   transform: rotate(45deg);
+}
+.cta {
+  padding: 100px 0;
+  background-image: url(../images/ctabg.png);
+}
+.cta__title {
+  margin-bottom: 50px;
+}
+.title__text {
+  margin: 0;
+  font: 400 30px/44px "Roboto Slab";
+  color: #fff;
+}
+.cta-row {
+  text-align: center;
+}
+.cta__button {
+  padding: 15px 28px;
+  font: 400 18px "Roboto Slab";
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.cta__button:hover {
+  color: #c0301c;
+  background-color: #fff;
+}
+.blog {
+  padding: 100px 0;
+}
+.title__headline_blog:before {
+  left: 83px;
+}
+.blog__title {
+  margin-bottom: 70px;
+}
+.post {
+  font-size: 0;
+}
+.post:hover .hover-color {
+  color: #c0301c;
+}
+.post__image {
+  margin-right: 40px;
+}
+.date {
+  display: inline-block;
+  margin: 0;
+  width: 76px;
+  height: 76px;
+  padding: 12px 22px;
+  box-sizing: border-box;
+  vertical-align: top;
+  border: 2px solid #555555;
+  font: 700 24px "Montserrat";
+  color: #777;
+  letter-spacing: 2px;
+}
+.date p {
+  margin: 0;
+}
+.date__month {
+  font-size: 12px;
+}
+.title-post {
+  display: inline-block;
+  padding: 14px 0;
+  vertical-align: top;
+}
+.post__title {
+  margin-left: 26px;
+}
+.title-post__title {
+  margin: 0 0 8px 0;
+  font: 400 16px "Montserrat";
+  color: #777;
+  text-transform: uppercase;
+}
+.author {
+  margin: 0;
+  font: italic 13px "Roboto Slab";
+  color: #777;
+}
+.post__text {
+  display: inline-block;
+  margin: 0;
+  max-width: 640px;
+  font: 400 14px/24px "Roboto Slab";
+  color: #555;
+}
+.clients {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+.logos {
+  text-align: center;
+}
+.clients__logos {
+  padding-bottom: 65px;
+}
+.logos__logo {
+  display: inline-block;
+  margin: 0 28px;
+  background-image: url(../images/sprite.png);
+}
+.deorham {
+  width: 142px;
+  height: 30px;
+  background-position: 0 -92px;
+}
+.logos__deorahm {
+  margin-bottom: 14px;
+}
+.ratings {
+  width: 122px;
+  height: 50px;
+  background-position: -144px -93px;
+}
+.malik-media {
+  width: 142px;
+  height: 18px;
+  background-position: 0 -123px;
+}
+.logos__malik-media {
+  margin-bottom: 15px;
+}
+.bcause {
+  width: 111px;
+  height: 22px;
+  background-position: -144px -143px;
+}
+.logos__bcause {
+  margin-bottom: 16px;
+}
+.wompify {
+  width: 123px;
+  height: 46px;
+  background-position: 0 -141px;
+}
+.clients__caption {
+  max-width: 790px;
+  margin: 0 auto;
+  color: #555;
+  text-align: center;
+}
+.clients__quote {
+  margin: 0;
+  padding-bottom: 40px;
+  font: italic 18px/30px "Roboto Slab";
+}
+.clients__quote-author {
+  margin: 0;
+  font: 400 20px "Roboto Slab";
+}
+.circle-buttons {
+  text-align: center;
+  font-size: 0;
+}
+.clients__buttons {
+  padding-top: 40px;
+}
+.circle-buttons__button {
+  display: inline-block;
+  margin: 0 5px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+.circle-buttons__button:first-child {
+  background-color: #c0301c;
 }
