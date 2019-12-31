@@ -131,7 +131,7 @@ body {
   display: inline-block;
   position: relative;
   margin: 0 0 55px;
-  font: 700 20px "Montserrat";
+  font: 400 20px "Montserrat";
   color: #555;
   text-transform: uppercase;
 }
@@ -485,8 +485,23 @@ body {
 .post:hover .hover-color {
   color: #c0301c;
 }
+.hover-color {
+  transition: all 0.1s ease;
+}
+.posts__post_first {
+  padding-bottom: 38px;
+  border-bottom: 1px solid #ddd;
+}
+.posts__post_last {
+  padding-top: 38px;
+}
 .post__image {
   margin-right: 40px;
+}
+.post__content {
+  display: inline-block;
+  max-width: 640px;
+  vertical-align: top;
 }
 .date {
   display: inline-block;
@@ -529,9 +544,19 @@ body {
 .post__text {
   display: inline-block;
   margin: 0;
-  max-width: 640px;
+  padding: 20px 0 30px; 
   font: 400 14px/24px "Roboto Slab";
   color: #555;
+}
+.post__readmore {
+  font: 700 13px "Roboto Slab";
+  color: #777;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.post__readmore:hover {
+  color: #c0301c;
 }
 .clients {
   padding: 100px 0;
@@ -614,4 +639,59 @@ body {
 }
 .circle-buttons__button:first-child {
   background-color: #c0301c;
+}
+.title__headline_aside:before {
+  left: 35%;
+}
+.contact-form {
+  padding: 100px 0;
+}
+.contact-form__wrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
+.company-info__content {
+  padding-top: 70px;
+}
+.company-info {
+  float: left;
+}
+.company-info__container {
+  padding-bottom: 38px;
+}
+.company-info-title {
+  margin: 0;
+  padding-bottom: 18px;
+  position: relative;
+  font: 700 14px "Montserrat";
+  color: #555;
+  text-transform: uppercase;
+}
+.company-info-title:before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  background-image: url(../images/sprite.png);
+  transition: all 0.2s ease;
+}
+.adress__title:before {
+  width: 12px;
+  height: 19px;
+  background-position: -310px -18px;
+}
+.adress:hover .adress__title:before {
+  background-position: -310px -37px;
+}
+.hotline__title:before {
+  width: 12px;
+  height: 20px;
+  background-position: -296px -19px;
+}
+.hotline:hover .hotline__title:before {
+  background-position: -296px -41px;
+}
+.company-info__text {
+  margin: 0;
+  font: 400 12px/20px "Roboto Slab";
+  color: #555;
 }
