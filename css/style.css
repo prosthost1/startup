@@ -756,6 +756,7 @@ body {
   letter-spacing: 1px;
   border: 1px solid #555;
   transition: all 0.2s ease;
+  background-color: #fff;
 }
 .submit:hover {
   background-color: #c0301c;
