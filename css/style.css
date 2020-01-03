@@ -131,7 +131,7 @@ body {
   display: inline-block;
   position: relative;
   margin: 0 0 55px;
-  font: 400 20px "Montserrat";
+  font: 700 20px "Montserrat";
   color: #555;
   text-transform: uppercase;
 }
@@ -649,11 +649,12 @@ body {
 .contact-form__wrapper {
   width: 1100px;
   margin: 0 auto;
-}
-.company-info__content {
   padding-top: 70px;
 }
-.company-info {
+.company-info__content {
+  display: inline-block;
+}
+.contacts-form__company-info {
   float: left;
 }
 .company-info__container {
@@ -671,6 +672,7 @@ body {
   content: '';
   position: absolute;
   left: -20px;
+  top: -1px;
   background-image: url(../images/sprite.png);
   transition: all 0.2s ease;
 }
@@ -690,8 +692,121 @@ body {
 .hotline:hover .hotline__title:before {
   background-position: -296px -41px;
 }
+.email__title:before {
+  width: 16px;
+  height: 12px;
+  top: 2px;
+  background-position: -278px -19px;
+}
+.email:hover .email__title:before {
+  background-position: -278px -32px;
+}
 .company-info__text {
   margin: 0;
   font: 400 12px/20px "Roboto Slab";
   color: #555;
+}
+.form {
+  max-width: 730px;
+  font-size: 0;
+}
+.contact-form__form {
+  float: right;
+}
+.text-field {
+  width: 350px;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  font: 400 12px "Roboto Slab";
+  color: #555;
+}
+.form__text-field,
+.form__textarea {
+  margin-bottom: 20px;
+}
+.text-field:focus,
+.textarea:focus {
+  border-color: #c0301c;
+}
+::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font: 400 12px "Roboto Slab";
+  color: #555;
+}
+.form__text-field_first {
+  margin-right: 30px;
+}
+.textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 20px;
+  font: 400 12px "Roboto Slab";
+  color: #555;
+  outline: none;
+  resize: vertical;
+}
+.submit {
+  padding: 14px 35px;
+  font: 400 12px "Roboto Slab";
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #555;
+  transition: all 0.2s ease;
+}
+.submit:hover {
+  background-color: #c0301c;
+  color: #fff;
+  border-color: transparent;
+  cursor: pointer;
+}
+.footer {
+  padding: 100px 0;
+  background-color: #c0301c;
+}
+.social-row {
+  text-align: center;
+  font-size: 0;
+}
+.social-row__tw {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin: 0 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: inline-block;
+}
+.social-row__tw:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  top: 10px;
+  left: 8px;
+  background-image: url(../images/sprite.png);
+  background-position: -289px 0;
+}
+.footer__social-row {
+  padding-bottom: 60px;
+  position: relative;
+}
+.footer__social-row:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  left: 48.5%;
+  top: 70px;
+  background-color: #fff;
+}
+.copy {
+  margin: 0;
+  text-align: center;
+  font: 400 12px "Roboto Slab";
+  color: #fff;
+  text-transform: uppercase;
 }
